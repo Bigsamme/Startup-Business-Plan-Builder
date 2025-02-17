@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LightningFeedback: Get Real User Insights, Fast</title>
+  <style>
+    /* --- Basic Reset & Layout --- */
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafc;
+      color: #222;
+    }
+    header, main, footer {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+    
+    /* --- Hero Section --- */
+    .hero {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #0074D9;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-text .cta-btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background: #0074D9;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .hero-text .cta-btn:hover {
+      background: #005fa3;
+    }
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    /* --- Feature Section --- */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .feature {
+      flex: 1 1 calc(33.333% - 1rem);
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+      min-width: 250px;
+    }
+    .feature h3 {
+      margin-bottom: 0.5rem;
+      color: #0074D9;
+    }
+    .feature p {
+      font-size: 0.95rem;
+    }
+
+    /* --- JTBD / Pain Section --- */
+    .pain {
+      background: #edf2f7;
+      padding: 2rem;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+    }
+    .pain h2 {
+      color: #e53e3e;
+      margin-bottom: 1rem;
+    }
+    .pain p {
+      margin-bottom: 1rem;
+    }
+    .pain ul {
+      list-style: disc inside;
+      margin-left: 1rem;
+    }
+
+    /* --- Testimonials --- */
+    .testimonials {
+      margin-bottom: 2rem;
+    }
+    .testimonial {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.05);
+    }
+    .testimonial .name {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial .role {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    /* --- CTA Footer --- */
+    .cta-section {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0074D9;
+    }
+    .cta-section p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta-section .cta-btn {
+      font-size: 1.1rem;
+      padding: 0.8rem 2rem;
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-text, .hero-image {
+        flex: 1 1 100%;
+      }
+      .features {
+        flex-direction: column;
+      }
+      .feature {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>LightningFeedback</h1>
+      <p>Collect your users' insights with lightning speed. No complicated setups, no code. 
+        Just the streamlined feedback collector you need to validate your product ideas.</p>
+      <a href="#get-started" class="cta-btn">Get Started in 5 Minutes</a>
+    </div>
+    <div class="hero-image">
+      <!-- Replace with your own brand or relevant illustration -->
+      <img src="https://placehold.co/400x300?text=LightningFeedback" alt="Product Illustration">
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <main>
+    <section class="features">
+      <div class="feature">
+        <h3>One-Step Install</h3>
+        <p>Embed one form on your landing page or product site. No complex coding—just drop it in and start collecting feedback instantly.</p>
+      </div>
+      <div class="feature">
+        <h3>Zero-Friction UX</h3>
+        <p>Your users submit their thoughts in seconds. Fewer steps = higher feedback volume. 
+           Get valuable insights without scaring anyone away.</p>
+      </div>
+      <div class="feature">
+        <h3>Own Your Data</h3>
+        <p>Store all submissions locally or on your own server—no subscriptions, no third-party data harvesting. 
+           You stay in control.</p>
+      </div>
+    </section>
+
+    <!-- Pain Points / JTBD Explanation -->
+    <section class="pain">
+      <h2>Tired of Complex Feedback Platforms?</h2>
+      <p>We get it. Sometimes, you just need a quick, no-nonsense way to gather user opinions:</p>
+      <ul>
+        <li><strong>When launching a new product,</strong> you want to validate your ideas in real-time.</li>
+        <li><strong>When you're refining user experience,</strong> you need direct feedback fast.</li>
+        <li><strong>When you're on a tight budget,</strong> you don't want monthly fees or bloated dashboards.</li>
+      </ul>
+      <p>That’s the Job to Be Done (<em>JTBD</em>):
+        <em>“When I’m launching a small product, I need a simple tool to collect user feedback 
+        so I can iterate quickly and meet real customer needs.”</em>
+      </p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>Success Stories</h2>
+
+      <div class="testimonial">
+        <div class="name">Sarah Wheeler</div>
+        <div class="role">Founder, CozyCRM</div>
+        <p>"LightningFeedback helped me pivot my product in less than a week—users told me exactly 
+           what they hated about the old UI. Two days later, sign-ups doubled."</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="name">Jason Park</div>
+        <div class="role">Lead Developer, DevZone.io</div>
+        <p>"I was about to spend hours on a custom feedback form. Then I found LightningFeedback. 
+           Dropped it in, and we started capturing real insights the same day."</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="get-started">
+      <h2>Start Collecting Feedback Today</h2>
+      <p>Don’t waste time coding your own feedback tool or paying for features you don’t need. 
+         Install LightningFeedback, gather crucial user insights, and validate your ideas with minimal fuss.</p>
+      <a href="/feedback" class="cta-btn">Install Now</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2023 LightningFeedback — Built to help you nail your <em>JTBD</em> with ease.
+    </p>
+  </footer>
+
+</body>
+</html>
