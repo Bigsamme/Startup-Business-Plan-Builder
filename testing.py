@@ -2,6 +2,9 @@
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
+from rich.console import Console
+from rich.markdown import Markdown
+
 
 load_dotenv() 
 
@@ -84,7 +87,9 @@ response = generate_business_plan(name, mission, product_description, target_mar
                                   market_research, go_to_market, financial_data, risks, future_roadmap)
 
 # Extract the formatted content from the first choice
-formatted_plan = response['choices'][0]['message']['content']
+formatted_plan = response.choices[0].message.content
 
-# Print the formatted business plan (which includes headings and bullet points)
-print(formatted_plan)
+# Use Rich to render the Markdown-formatted business plan
+console = Console()
+markdown = Markdown(formatted_plan)
+console.print(markdown)
